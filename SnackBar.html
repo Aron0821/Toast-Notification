@@ -4,9 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="SnackBar.css" />
+    <script
+      src="https://kit.fontawesome.com/1e476e4f53.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Toast Notification</title>
   </head>
   <body>
+    <div class="buttons">
+      <button onclick="showTost(successMsg)">Success</button>
+      <button onclick="showTost(errorMsg)">Error</button>
+      <button onclick="showTost(invalidMsg)">Invalid</button>
+    </div>
+
+    <div id="toastBox"></div>
     <script src="SnackBar.js"></script>
   </body>
 </html>
